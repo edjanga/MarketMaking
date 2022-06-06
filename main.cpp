@@ -37,7 +37,7 @@ int main(){
         cout << setfill('-');
         cout << setw(col_width) << "Bid " << " Ask" << endl;
         col_width = 18;
-        cout << setw(col_width) << "  " << bid << ask << endl;
+        cout << setw(col_width) << bid << ask << endl;
         if(bid>fair_value){
             cout << "I will sell." << endl;
             cout << "Make me another market." << endl;
@@ -49,6 +49,10 @@ int main(){
         }
         else if((abs(ask-fair_value)<=spread)&&(abs(bid-fair_value)<=spread)){
             cout << "I will not trade with you." << endl;
+            break;
+        }
+        else{
+            cout << "You have quit the game. Hope to see you again." << endl;
             break;
         }
         count += 1;   
