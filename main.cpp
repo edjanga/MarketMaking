@@ -6,9 +6,9 @@
 using namespace std;
 
 int main(){
-    
+
     cout << "======================================================================" << endl;
-    cout << "Welcome to the market making interface." << endl;
+    cout << "=========== Welcome to the market making interface. ==================" << endl;
     cout << "======================================================================" << endl;
     cout << endl;
     cout << endl;
