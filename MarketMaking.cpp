@@ -30,13 +30,13 @@ float MarketMaking::getMaxSpread(){
     return this->max_spread;
 }
 float MarketMaking::getUpper(){
-    return static_cast<float> (this->upper);
+    return this->upper;
 }
 void MarketMaking::setGame(){
     float spread;
     unsigned int rounds;
     unsigned int upperbound;
-    cout << "Enter the maximum spread allowed, the amount of rounds you want the simulation to last and the upperbound for the random number." << endl;
+    cout << "Enter the maximum spread allowed, the number of rounds you want the simulation to last and the upperbound for the random number." << endl;
     cin >> spread >> rounds >> upperbound;
     this->setMaxSpread(spread);
     this->setAmountOfRounds(rounds);
